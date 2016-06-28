@@ -30,6 +30,7 @@ app.listen(port, () => {
   logger.log('info', '[EXPRESS] - listening port: %d', port);
 });
 
-app.use('/', require('./controllers/home'));
+app.use('/seat', require('./controllers/seat'));
+app.use('/section', require('./controllers/section'));
 
 module.exports = app;
